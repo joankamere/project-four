@@ -1,0 +1,11 @@
+.welcome {
+    background-image:url(https://www.delonghi.com/Global/recipes/multifry/pizza_fresca.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    text-align: center;
+    font-family: 'Open Sans Condensed';
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
