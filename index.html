@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </head>
+
 <body>
     <div class="container-fluid">
         <div class="welcome">
@@ -23,20 +25,35 @@
                 <div class="col-md-4">
                     <P>Small 600ksh</P>
                     <div class="image">
-                        <img src="img/small.jpg" width = "300" height = "300">
+                        <img src="img/small.jpg" width="300" height="300">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <p>Medium 900ksh</p>
-                    <img src="img/large.jpg" width = "300" height = "300">
+                    <img src="img/large.jpg" width="300" height="300">
                 </div>
                 <div class="col-md-4">
                     <p>Large 1200ksh</p>
-                    <img src="img/tikka.png"width = "300" height = "300">
+                    <img src="img/tikka.png" width="300" height="300">
                 </div>
+            </div>
         </div>
+        <div class="order">
+            <h1 class="text-center" id="order-pizza">Place Order</h1>
+            <div class="form-group row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8 order-overlay text-center">
+                    <form class="col-sm-6 offset-sm-3 text-center">
+                        <label>Choose your pizza type</label>
+                        <select class="custom-select custom-select-md mb-3 flavour" required>
+                            <option value="chickentikka">Chicken Tikka</option>
+                            <option value="bbq">BBQ Steak</option>
+                            <option value="boerewors">Pepperoni</option>
+                            <option value="hawaiian">Hawaiian</option>
+                        </select>
     </div>
-    
+
 
 </body>
+
 </html>
