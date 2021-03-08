@@ -22,6 +22,11 @@
 .order {
     padding-top: 5%;
     padding-bottom: 5%;
+    background-image: url(https://www.keyingredient.com/media/59/d3/289023a4a9ce8e9669b1ccd081c6cad337ac.jpg/rh/fail-proof-pizza-dough-and-cheesy-garlic-bread-sticks.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
 }
 .checkouts {
     padding-top: 5%;
