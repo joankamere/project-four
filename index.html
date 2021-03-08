@@ -16,8 +16,8 @@
 <body>
     <div class="container-fluid">
         <div class="welcome">
-            <h1>J's Pizzas</h1>
-            <h2>Pizza Made With Love.</h2>
+            <h1 class="bg-white">J's Pizzas</h1>
+            <h2 class="bg-white">Pizza Made With Love.</h2>
         </div>
         <div class="menu">
             <h1>MENU</h1>
@@ -85,20 +85,27 @@
         </div>
         <div class="order-summary" id="sum-order">
             <h1 class="text-center" id="summary">Order Summary</h1>
-            <h2 class="text-center summary">Good day, please review your order before checkout.</h2>
+            <h5 class="text-center summary">Good day, please review your order before checkout.</h5>
             <ol id="list" class="text-center sum">
             </ol>
-        
-        
-            <div class="cdata-overlay">
+
+
+            <div class="mydata-overlay">
                 <div class="customerdata row">
                     <div class="col-sm-3"></div>
                     <form action="" class="form-group col-sm-6 data">
                         <input type="text" class="form-control cdata" placeholder="Name">
                         <input type="text" class="form-control cdata" placeholder="Phone number">
                         <input type="text" class="form-control cdata" placeholder="Location">
-                        <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
                     </form>
+                </div>
+            </div>
+
+            <div class="d-block mx-auto text-center">
+                <button class='deliver'>Make Delivery</button>
+                <button class='delivernot'>Pick Up</button>
+            </div>
+        </div>
     </div>
 
 
