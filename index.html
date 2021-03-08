@@ -51,12 +51,38 @@
                             <option value="boerewors">Pepperoni</option>
                             <option value="hawaiian">Hawaiian</option>
                         </select>
-                        <label for="crust">Choose your favorite Crust:</label>
+                        <label for="crust">Upgrade Crust</label>
                         <select class="custom-select custom-select-md mb-3" id="crust" required>
+                            <option value="none">None</option>
                             <option value="crispy">Crispy 120ksh</option>
                             <option value="stuffed">Stuffed 150ksh</option>
                             <option value="gluten">Gluten-free 180ksh</option>
                         </select>
+                        <label>Pizza Size:</label>
+                        <select class="custom-select custom-select-md mb-3" id="size" required>
+                            <option value="regular">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                        <label>Extra Toppings</label>
+                        <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                            <option value="none">None</option>
+                            <option value="cheese">Cheese 50ksh</option>
+                            <option value="pepperoni">Pepperoni 80ksh</option>
+                            <option value="mushroom">Mushrooms 60ksh</option>
+                            <option value="chicken">Chicken 100ksh</option>
+                        </select>
+                        <label for="number">Number of Pizza's</label>
+                <input type="number" class="form-control" id="number" placeholder="1">
+            </form>
+            <a href="#summary">
+                <button type="submit" class="btn btn-success checkout" id="checkout">
+                    Checkout
+                </button>
+            </a>
+                </div>
+            </div>
+        </div>
     </div>
 
 
