@@ -14,6 +14,28 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">J's Pizzas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse align-items-center" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#about_us">About Us</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#order">Place order</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#checkout">Checkout</a>
+              </li>      
+          </ul>
+        </div>  
+      </nav>
     <div class="container-fluid">
         <div class="welcome">
             <h1 class="bg-white">J's Pizzas</h1>
@@ -38,6 +60,7 @@
                 </div>
             </div>
         </div>
+
         <div class="order">
             <h1 class="text-center" id="order-pizza">Place Order</h1>
             <div class="form-group row">
@@ -83,7 +106,7 @@
                 </div>
             </div>
         </div>
-        <div class="order-summary" id="sum-order">
+        <div class="checkout">
             <h1 class="text-center" id="summary">Order Summary</h1>
             <h5 class="text-center summary">Good day, please review your order before checkout.</h5>
             <ol id="list" class="text-center sum">
