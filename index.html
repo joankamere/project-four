@@ -73,16 +73,32 @@
                             <option value="chicken">Chicken 100ksh</option>
                         </select>
                         <label for="number">Number of Pizza's</label>
-                <input type="number" class="form-control" id="number" placeholder="1">
-            </form>
-            <a href="#summary">
-                <button type="submit" class="btn btn-success checkout" id="checkout">
-                    Checkout
-                </button>
-            </a>
+                        <input type="number" class="form-control" id="number" placeholder="1">
+                    </form>
+                    <a href="#summary">
+                        <button type="submit" class="btn btn-success checkout" id="checkout">
+                            Checkout
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
+        <div class="order-summary" id="sum-order">
+            <h1 class="text-center" id="summary">Order Summary</h1>
+            <h2 class="text-center summary">Good day, please review your order before checkout.</h2>
+            <ol id="list" class="text-center sum">
+            </ol>
+        
+        
+            <div class="cdata-overlay">
+                <div class="customerdata row">
+                    <div class="col-sm-3"></div>
+                    <form action="" class="form-group col-sm-6 data">
+                        <input type="text" class="form-control cdata" placeholder="Name">
+                        <input type="text" class="form-control cdata" placeholder="Phone number">
+                        <input type="text" class="form-control cdata" placeholder="Location">
+                        <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
+                    </form>
     </div>
 
 
