@@ -17,10 +17,5 @@
     color: black;
     text-align: center;
     padding-top: 5%;
-}
-.image {
-    width: 30px;  
-height: 30px;  
- 
-padding: 15px;  
+    padding-bottom: 5%;
 }
