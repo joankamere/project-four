@@ -16,6 +16,14 @@
     background-repeat: no-repeat;
     color: black;
     text-align: center;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+.order {
     padding-top: 5%;
     padding-bottom: 5%;
+}
+.checkouts {
+    padding-top: 5%;
+    padding-bottom: 10%;
 }
