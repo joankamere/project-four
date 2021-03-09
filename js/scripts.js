@@ -54,7 +54,7 @@ function calctotalPrice(e) {
 
 }
 
-$("button#make-checkout").click(function (event) {
+$("button#checkout").click(function (event) {
     event.preventDefault();
 
     $("#pizzatotal").hide();
@@ -62,36 +62,27 @@ $("button#make-checkout").click(function (event) {
     $("button#make-delivery").hide();
     let deliveryamount = checkoutTotal + 200;
     console.log("Final Bill is: " + deliveryamount);
-    let person = $("input#name").val();
-    let phone = $("input#number").val();
-    let location = $("input#location").val();
 
-    if ($("input#name").val() && $("input#number").val() && $("input#location").val() != "") {
-
-        $("#finallmessage").append(person + ", We have recieved your order and it will be delivered to you at " + location + ". Prepare sh. " + deliveryamount);
-        $("#totalbill").hide();
+    if ($("#totalbill").show()) {
         $("#finallmessage").slideDown(1200);
     }
     else {
         alert("Incomplete information!");
-        $(".mydata-overlay").show();
-        $("button#checkout").show();
     }
 });
-event.preventDefault();
-  });
-});
 
-$(document).ready(function(){
-    $("form#formXYZ").submit(function(event){
-      var name = $("input#name").val();
-      var number = $("input#number").val();
-      var message = $("textarea#comment").val();
-      if ($("input#name").val() && $("input#number").val()){
-        alert (name + ", We have recieved your order and it will be delivered to you at " + location + ". Prepare sh. " + deliveryamount);
-      }
-      else {
-        alert("Enter your information to proceed!");
-      }
+
+$(document).ready(function () {
+    $("form#formXYZ").submit(function (event) {
+        event.preventDefault();
+        var name = $("input#name").val();
+        var number = $("input#number").val();
+        var location = $("input#location").val();
+        if ($("input#name").val() && $("input#location").val()) {
+            alert(name + ", we have recieved your order and it will be delivered to you at " + location + "in 1 hour!");
+        }
+        else {
+            alert("Enter all your information to proceed!");
+        }
     });
-  });
+});
