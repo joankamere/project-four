@@ -54,7 +54,7 @@ function calctotalPrice(e) {
 
 }
 
-$("button#make-delivery").click(function (event) {
+$("button#make-checkout").click(function (event) {
     event.preventDefault();
 
     $("#pizzatotal").hide();
@@ -75,9 +75,23 @@ $("button#make-delivery").click(function (event) {
     else {
         alert("Incomplete information!");
         $(".mydata-overlay").show();
-        $("button#make-delivery").show();
+        $("button#checkout").show();
     }
 });
 event.preventDefault();
   });
 });
+
+$(document).ready(function(){
+    $("form#formXYZ").submit(function(event){
+      var name = $("input#name").val();
+      var number = $("input#number").val();
+      var message = $("textarea#comment").val();
+      if ($("input#name").val() && $("input#number").val()){
+        alert (name + ", We have recieved your order and it will be delivered to you at " + location + ". Prepare sh. " + deliveryamount);
+      }
+      else {
+        alert("Enter your information to proceed!");
+      }
+    });
+  });
