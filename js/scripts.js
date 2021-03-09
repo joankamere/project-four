@@ -50,7 +50,7 @@ $(document).ready(function () {
         event.preventDefault();
         var totalPrice = (getSizeCost() + getCrustCost() + cheese()) * (getNumber());
         console.log(totalPrice);
-    alert("Congratulations! Your order of " + getNumber() + " pizzas has been processed. The total amount is " + totalPrice + ".")
+    alert("Congratulations! Your order of " + getNumber() + " pizzas has been processed. The total amount is " + totalPrice + "." + " Please pick up in 1 hour or fill in the form below for delivery options.")
 
     });
 });
