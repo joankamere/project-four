@@ -17,22 +17,22 @@
     <nav class="navbar navbar-expand-sm bg-success navbar-dark fixed-top">
         <a class="navbar-brand" href="#">J's Pizzas</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse align-items-center" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#menu">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#order">Place order</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#checkouts">Checkout</a>
-              </li>      
-          </ul>
-        </div>  
-      </nav>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#order">Place order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#checkouts">Checkout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="container-fluid">
         <div class="welcome">
             <h1 class="bg-white">J's Pizzas</h1>
@@ -94,32 +94,35 @@
                         </select>
                         <label for="number">Number of Pizza's</label>
                         <input type="number" class="form-control" id="number" placeholder="enter number">
-                        <button type="submit" class="btn btn-success checkout" id="checkout" value="Checkout" onclick="calctotalPrice()">Checkout</button>
+                        <button type="submit" class="btn btn-success checkout" id="checkout" value="Checkout"
+                            onclick="calctotalPrice()">Checkout</button>
                     </form>
                     </a>
                 </div>
             </div>
         </div>
         <form id="formXYZ">
-        <div class="checkouts" id="checkouts">
-            <h1 class="text-center" id="summary">Order Summary</h1>
-            <h5 class="text-center summary">Good day, please review your order before checkout. Delivery fee 200ksh</h5>
-            <ol id="list" class="text-center sum">
-            </ol>
-            
-            <div class="mydata-overlay">
-                <div class="customerdata row">
-                    <div class="col-sm-3"></div>
-                    <form action="" class="form-group col-sm-6 data">
-                        <input type="text" id="name" class="form-control" placeholder="Name">
-                        <input type="number" name= "number" id="number" class="form-control" placeholder="Phone number">
-                        <input type="text" id="location" class="form-control" placeholder="Location">
-                    </form>
+            <div class="checkouts" id="checkouts">
+                <h1 class="text-center" id="summary">Order Summary</h1>
+                <h5 class="text-center summary">Good day, please review your order before checkout. Delivery fee 200ksh
+                </h5>
+                <ol id="list" class="text-center sum">
+                </ol>
+
+                <div class="mydata-overlay">
+                    <div class="customerdata row">
+                        <div class="col-sm-3"></div>
+                        <form action="" class="form-group col-sm-6 data">
+                            <input type="text" id="name" class="form-control" placeholder="Name">
+                            <input type="number" name="number" id="number" class="form-control"
+                                placeholder="Phone number">
+                            <input type="text" id="location" class="form-control" placeholder="Location">
+                        </form>
+                    </div>
                 </div>
-            </div>
 
                 <button type="submit" class="btn btn-primary col-md-1">Submit</button>
-        </div>
+            </div>
         </form>
     </div>
 
