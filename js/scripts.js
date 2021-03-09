@@ -1,4 +1,3 @@
-//business logic
 function getSizeCost() {
     var selectedSize = document.getElementById("size").value;
     return parseInt(selectedSize);
@@ -13,7 +12,7 @@ function getNumber() {
     return parseInt(selectedNumber);
 }
 
-function mushrooms() {
+function cheese() {
     var cheese = 0;
     var addCheese = document.getElementById("toppings");
     if (addCheese.checked === true) {
@@ -45,30 +44,15 @@ function chicken() {
     }
     return parseInt(mushroom);
 }
-function calctotalPrice(e) {
-    event.preventDefault();
-    var totalPrice = (getSizeCost() + getCrustCost() + mushroom()) * (getNumber());
 
-    console.log(totalPrice);
-    alert("Congratulations! Your order of" + getNumber() + " pizzas has been processed. The total amount is " + totalPrice + ".")
+$(document).ready(function () {
+    $("form#choosez").submit(function (event) {
+        event.preventDefault();
+        var totalPrice = (getSizeCost() + getCrustCost() + cheese()) * (getNumber());
+        console.log(totalPrice);
+    alert("Congratulations! Your order of " + getNumber() + " pizzas has been processed. The total amount is " + totalPrice + ".")
 
-}
-
-$("button#checkout").click(function (event) {
-    event.preventDefault();
-
-    $("#pizzatotal").hide();
-    $(".mydata-overlay").hide();
-    $("button#make-delivery").hide();
-    let deliveryamount = checkoutTotal + 200;
-    console.log("Final Bill is: " + deliveryamount);
-
-    if ($("#totalbill").show()) {
-        $("#finallmessage").slideDown(1200);
-    }
-    else {
-        alert("Incomplete information!");
-    }
+    });
 });
 
 
