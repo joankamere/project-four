@@ -80,9 +80,9 @@
                         </select>
                         <label>Pizza Size:</label>
                         <select class="custom-select custom-select-md mb-3" id="size" required>
-                            <option value="regular">Small</option>
-                            <option value="medium">Medium</option>
-                            <option value="large">Large</option>
+                            <option value="600">Small</option>
+                            <option value="900">Medium</option>
+                            <option value="1200">Large</option>
                         </select>
                         <label>Extra Toppings</label>
                         <select class="custom-select custom-select-md mb-3" id="toppings" required>
@@ -94,11 +94,8 @@
                         </select>
                         <label for="number">Number of Pizza's</label>
                         <input type="number" class="form-control" id="number" placeholder="1">
+                        <button type="submit" class="btn btn-success checkout" id="checkout" value="Checkout" onclick="calctotalPrice()">Checkout</button>
                     </form>
-                    <a href="#summary">
-                        <button type="submit" class="btn btn-success checkout" id="checkout">
-                            Checkout
-                        </button>
                     </a>
                 </div>
             </div>
@@ -109,20 +106,20 @@
             <h5 class="text-center summary">Good day, please review your order before checkout. Delivery fee 200ksh</h5>
             <ol id="list" class="text-center sum">
             </ol>
-
+            <p id="finallmessage"></p>
             <div class="mydata-overlay">
                 <div class="customerdata row">
                     <div class="col-sm-3"></div>
                     <form action="" class="form-group col-sm-6 data">
-                        <input type="text" class="form-control cdata" placeholder="Name">
-                        <input type="text" class="form-control cdata" placeholder="Phone number">
-                        <input type="text" class="form-control cdata" placeholder="Location">
+                        <input type="text" id="name" class="form-control cdata" placeholder="Name">
+                        <input type="text" id="number" class="form-control cdata" placeholder="Phone number">
+                        <input type="text" id="location" class="form-control cdata" placeholder="Location">
                     </form>
                 </div>
             </div>
 
             <div class="d-block mx-auto text-center">
-                <button class='deliver'>Make Delivery</button>
+                <button class="btn-orange" id="make-delivery">Make Delivery</button>
                 <button class='delivernot'>Pick Up</button>
             </div>
         </div>
